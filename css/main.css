@@ -1634,3 +1634,7 @@ a {
 
 }
 /* Responsive END */
+
+.exhibition li {
+  margin-top: 10px;
+}
