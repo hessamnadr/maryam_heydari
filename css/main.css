@@ -1640,3 +1640,41 @@ a {
 .exhibition li {
   margin-top: 10px;
 }
+
+@keyframes animate_album{
+  0% { 
+    background-image: url('../images/album/1.jpg');
+  }
+  15% { 
+    background-image: url('../images/album/2.jpg');
+  }
+  30% { 
+    background-image: url('../images/album/3.jpg');
+  }
+  45% { 
+    background-image: url('../images/album/4.jpg');
+  }
+  60% { 
+    background-image: url('../images/album/5.jpg');
+  }
+  75% { 
+    background-image: url('../images/album/6.jpg');
+  }
+  90% { background-image: url('../images/album/tv.gif');}
+}
+
+
+.animated{
+  height: 700px!important;
+  background-size: cover;
+  animation-name: animate_album;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@media screen and (max-width: 575px) {
+  .animated{
+  height: 300px!important;
+  }
+}
