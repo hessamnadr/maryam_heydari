@@ -12,6 +12,7 @@ $(document).ready(function() {
 			$($('.animated img')[number]).show()
 		}else{
 			number = 0;
+			$($('.animated img')[number]).show()
 		}
 		number++;
 	},400)
