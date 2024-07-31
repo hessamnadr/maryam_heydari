@@ -10,6 +10,8 @@ $(document).ready(function() {
 		$('.animated img').hide();
 		if(number<=6){
 			$($('.animated img')[number]).show()
+		}else{
+			number = 0;
 		}
 		number++;
 	},400)
