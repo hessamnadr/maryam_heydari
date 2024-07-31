@@ -5,14 +5,14 @@ $(document).ready(function() {
 	let list = $('.animated img');
 	let number = 0;
 	let maxNumber = 6;
-	$('.animated img').hide();
+	$('.animated img').addClass('hide').removeClass('show');
 	setInterval(()=>{
-		$('.animated img').hide();
+		$('.animated img').addClass('hide').removeClass('show');
 		if(number<=6){
-			$($('.animated img')[number]).show()
+			$($('.animated img')[number]).addClass('show').removeClass('hide');
 		}else{
 			number = 0;
-			$($('.animated img')[number]).show()
+			$($('.animated img')[number]).addClass('show').removeClass('hide');
 		}
 		number++;
 	},400)
