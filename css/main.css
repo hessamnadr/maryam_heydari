@@ -1662,6 +1662,93 @@ a {
   }
   90% { background-image: url('../images/album/tv.gif');}
 }
+@-o-keyframes animate_album {
+  0% { 
+    background-image: url('../images/album/1.jpg');
+  }
+  15% { 
+    background-image: url('../images/album/2.jpg');
+  }
+  30% { 
+    background-image: url('../images/album/3.jpg');
+  }
+  45% { 
+    background-image: url('../images/album/4.jpg');
+  }
+  60% { 
+    background-image: url('../images/album/5.jpg');
+  }
+  75% { 
+    background-image: url('../images/album/6.jpg');
+  }
+  90% { background-image: url('../images/album/tv.gif');}
+}
+/* For Mozilla Firefox */
+@-moz-keyframes animate_album {
+  0% { 
+    background-image: url('../images/album/1.jpg');
+  }
+  15% { 
+    background-image: url('../images/album/2.jpg');
+  }
+  30% { 
+    background-image: url('../images/album/3.jpg');
+  }
+  45% { 
+    background-image: url('../images/album/4.jpg');
+  }
+  60% { 
+    background-image: url('../images/album/5.jpg');
+  }
+  75% { 
+    background-image: url('../images/album/6.jpg');
+  }
+  90% { background-image: url('../images/album/tv.gif');}
+}
+/* For Google Chrome and Safari */
+@-webkit-keyframes animate_album {
+  0% { 
+    background-image: url('../images/album/1.jpg');
+  }
+  15% { 
+    background-image: url('../images/album/2.jpg');
+  }
+  30% { 
+    background-image: url('../images/album/3.jpg');
+  }
+  45% { 
+    background-image: url('../images/album/4.jpg');
+  }
+  60% { 
+    background-image: url('../images/album/5.jpg');
+  }
+  75% { 
+    background-image: url('../images/album/6.jpg');
+  }
+  90% { background-image: url('../images/album/tv.gif');}
+}
+/* The standard */
+@keyframes animate_album {
+  0% { 
+    background-image: url('../images/album/1.jpg');
+  }
+  15% { 
+    background-image: url('../images/album/2.jpg');
+  }
+  30% { 
+    background-image: url('../images/album/3.jpg');
+  }
+  45% { 
+    background-image: url('../images/album/4.jpg');
+  }
+  60% { 
+    background-image: url('../images/album/5.jpg');
+  }
+  75% { 
+    background-image: url('../images/album/6.jpg');
+  }
+  90% { background-image: url('../images/album/tv.gif');}
+}
 
 
 .animated{
@@ -1671,9 +1758,12 @@ a {
   animation-duration: 4s;
   animation-timing-function: linear;
   animation-iteration-count: infinite; */
-  animation: animate_album 4s linear infinite;
+  
+  -o-animation: animate_album 4s linear infinite;
+  -moz-animation: animate_album 4s linear infinite;
   -webkit-animation: animate_album 4s linear infinite;
   -ms-animation: animate_album 4s linear infinite;
+  animation: animate_album 4s linear infinite;
 }
 @media screen and (max-width: 575px) {
   .animated{
