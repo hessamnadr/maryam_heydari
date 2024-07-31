@@ -1669,9 +1669,10 @@ a {
   background-size: cover;
   animation-name: animate_album;
   animation-duration: 4s;
-  animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  -webkit-animation: animate_album 4s linear infinite ;
+  -ms-animation: animate_album 4s linear infinite ;
 }
 @media screen and (max-width: 575px) {
   .animated{
