@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+	
+		
+	let list = $('.animated img');
+	let number = 0;
+	let maxNumber = 6;
+	$('.animated img').hide();
+	setInterval(()=>{
+		$('.animated img').hide();
+		if(number<=6){
+			$($('.animated img')[number]).show()
+		}
+		number++;
+	},400)
+			
+			
+			
+	
+			
 	new WOW({
 		mobile: false,
 		animateClass: 'animate__animated', 
