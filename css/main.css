@@ -662,7 +662,7 @@ a {
   left: 0;
   top: 0;
   z-index: 9;
-  background-color: var(--color-def);
+  /* background-color: var(--color-def); */
   height: 100%;
   padding: 30px 20px;
 }
@@ -1395,7 +1395,7 @@ a {
 
 /* Footer START */
 .site-footer {
-  padding: 20px 20px 20px 110px;
+  padding: 20px 20px 20px 20px;
   background-color: var(--color-def);
   filter: brightness(0.9)
 }
